@@ -4,6 +4,8 @@ function DadJoke() {
   const [joke, setJoke] = useState("");
   const [error, setError] = useState(null);
 
+  // here they are chaining to get around doing async/await. {joke} is destructured from the promise returned by the previous line of code
+  
   useEffect(() => {
     fetch("https://icanhazdadjoke.com/", {
       headers: { Accept: "application/json" },

@@ -17,8 +17,8 @@ function PokemonViewer() {
   }, [id]);
 
   if (error) {
-    console.log(error);
-    console.log(pokemon);
+    // console.log(error);
+    // console.log(pokemon);
     return <p>Error!</p>;
   }
 
